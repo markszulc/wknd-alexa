@@ -1,0 +1,95 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "week end",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AdventureIntent",
+          "slots": [
+            {
+              "name": "AdventureType",
+              "type": "Activities"
+            }
+          ],
+          "samples": [
+            "What type of {AdventureType} options do you have",
+            "Do you do {AdventureType}",
+            "Can i go {AdventureType}",
+            "Show me Adventures for {AdventureType}",
+            "Can i play {AdventureType}"
+            
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Surfing"
+              }
+            },
+            {
+              "name": {
+                "value": "Skiing"
+              }
+            },
+            {
+              "name": {
+                "value": "Camping"
+              }
+            },
+            {
+              "name": {
+                "value": "Cycling"
+              }
+            },
+            {
+              "name": {
+                "value": "Hiking"
+              }
+            },
+            {
+              "name": {
+                "value": "Skateboarding"
+              }
+            },
+            {
+              "name": {
+                "value": "Running"
+              }
+            },
+            {
+              "name": {
+                "value": "Snowboarding"
+              }
+            },
+            {
+              "name": {
+                "value": "Social"
+              }
+            }
+          ],
+          "name": "Activities"
+        }
+      ]
+    }
+  },
+  "version": "11"
+}

@@ -1,0 +1,47 @@
+{
+    "type": "APL",
+    "version": "1.4",
+    "settings": {},
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-layouts",
+            "version": "1.2.0"
+        }
+    ],
+    "resources": [],
+    "styles": {},
+    "onMount": [],
+    "graphics": {},
+    "commands": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "type": "AlexaImageList",
+                "id": "adventureList",
+                "headerTitle": "${payload.screen.displayTitle}",
+                "headerBackButton": false,
+                "backgroundImageSource": "${payload.screen.backgroundImage}",
+                "backgroundBlur": false,
+                "backgroundColorOverlay": true,
+                "imageAspectRatio": "square",
+                "imageMetadataPrimacy": true,
+                "imageAlignment": "left",
+                "imageScale": "best-fill",
+                "listItems": "${payload.adventureList.items}",
+                "defaultImageSource": "https://wknd.site/us/en/adventures/downhill-skiing-wyoming/_jcr_content/root/container/container/tabs/item_1570890135033/par1/image.coreimg.60.1600.jpeg/1604549053217/adobestock-93049279.jpeg",
+                "imageBlurredBackground": true,
+                "primaryAction": {
+                    "type": "SetValue",
+                    "componentId": "adventureList",
+                    "property": "headerTitle",
+                    "value": "Adventure selected"
+                }
+            }
+        ]
+    }
+}
